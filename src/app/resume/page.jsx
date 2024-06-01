@@ -1,11 +1,30 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaBootstrap,
+  FaPython,
+  FaPhp,
+} from "react-icons/fa";
 
 import {
   SiTailwindcss,
-  SiGraphql,
+  SiExpress,
   SiMongodb,
+  SiCsharp,
+  SiMysql,
+  SiAdobeillustrator,
+  SiOpencv,
+  SiTensorflow,
+  SiPandas,
+  SiNumpy,
+  SiUnity,
+  SiGit,
+  SiNextdotjs
 } from "react-icons/si";
 
 // about data
@@ -35,8 +54,7 @@ const about = {
     },
     {
       fieldName: "Extracurricular Activities",
-      fieldValue:
-        "Assistant Logistic and Operations Executive of Design of the IUT Computer Society (2023 - Present)",
+      fieldValue: "IUTCS (Design for Events and Social Media)",
     },
   ],
 };
@@ -102,6 +120,22 @@ const skills = {
       name: "react",
     },
     {
+      icon: <FaBootstrap />,
+      name: "bootstrap",
+    },
+    {
+      icon: <FaPython />,
+      name: "python",
+    },
+    {
+      icon: <FaPhp />,
+      name: "php",
+    },
+    {
+      icon: <FaJs />,
+      name: "javascript",
+    },
+    {
       icon: <SiMongodb />,
       name: "mongodb",
     },
@@ -110,12 +144,48 @@ const skills = {
       name: "tailwind css",
     },
     {
-      icon: <SiGraphql />,
-      name: "graphql",
+      icon: <SiExpress />,
+      name: "express",
     },
     {
-      icon: <FaJs />,
-      name: "javascript",
+      icon: <SiCsharp />,
+      name: "c#",
+    },
+    {
+      icon: <SiMysql />,
+      name: "mysql",
+    },
+    {
+      icon: <SiAdobeillustrator />,
+      name: "adobe illustrator",
+    },
+    {
+      icon: <SiOpencv />,
+      name: "opencv",
+    },
+    {
+      icon: <SiTensorflow />,
+      name: "tensorflow",
+    },
+    {
+      icon: <SiPandas />,
+      name: "pandas",
+    },
+    {
+      icon: <SiNumpy />,
+      name: "numpy",
+    },
+    {
+      icon: <SiUnity />,
+      name: "unity",
+    },
+    {
+      icon: <SiGit />,
+      name: "git",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next js",
     },
   ],
 };
@@ -227,26 +297,28 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -256,14 +328,19 @@ const Resume = () => {
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3 className="">{about.title}</h3>
-                <p>{about.description}</p>
-                <ul>
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index}>
-                        <span>{item.fieldName}</span>
-                        <span>{item.fieldValue}</span>
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
                   })}

@@ -19,8 +19,8 @@ const Home = () => {
               <span className="text-accent">Shanta Maria</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+            I am proactive and thrive in collaborative team settings, specializing in web development, machine learning, and graphic design.
+
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
