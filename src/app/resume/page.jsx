@@ -18,10 +18,6 @@ const about = {
       fieldValue: "Shanta Maria",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "++880 1841 7555 72",
-    },
-    {
       fieldName: "Nationality",
       fieldValue: "Bangladeshi",
     },
@@ -260,7 +256,7 @@ const Resume = () => {
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3>{about.title}</h3>
+                <h3 className="">{about.title}</h3>
                 <p>{about.description}</p>
                 <ul>
                   {about.info.map((item, index) => {
