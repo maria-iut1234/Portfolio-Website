@@ -53,7 +53,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="test-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Fill out the form and describe your project needs. I'll get back
+                Fill out the form and describe your project needs. I&apos;ll get back
                 to you with a quote as soon as possible.
               </p>
               {/* input */}
