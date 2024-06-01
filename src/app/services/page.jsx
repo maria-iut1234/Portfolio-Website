@@ -7,31 +7,31 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Developer",
+    title: "Full-Stack Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
-    href: "",
+      "I build responsive and interactive web applications using React, Next.js, Tailwind CSS, Node.js, PHP, Express, and MongoDB. I also optimize websites for performance and SEO.",
+    href: "/contact",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Data Analysis and Machine Learning Models",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
-    href: "",
+      "I use Python, Pandas, NumPy, and Scikit-learn to analyze data, build machine learning models, and make predictions based on data.",
+    href: "/contact",
   },
   {
     num: "03",
-    title: "Logo Designer",
+    title: "Game Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
-    href: "",
+      "Using Unity, C#, and Blender assets, I build 2D and 3D games that are fun, engaging, and visually appealing. I also optimize games for performance and user experience.",
+    href: "/contact",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Illustration and Graphic Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
-    href: "",
+      "I create custom illustrations, logos, and graphics for websites, games, and social media. I also design user interfaces and user experiences for web and mobile applications.",
+    href: "/contact",
   },
 ];
 
